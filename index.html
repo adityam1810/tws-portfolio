@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Mishra | Cloud & DevOps</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #080d18;
+      color: #e5edff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    nav h2 { color: #67e8f9; }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 12%;
+      background: radial-gradient(
+        ellipse at 80% 30%, #14294a 0%, #080d18 60%
+      );
+    }
+
+    .tag {
+      color: #67e8f9;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #67e8f9, #a78bfa);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #94a3b8;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #67e8f9;
+      color: #08111b;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid #475569;
+      color: #e5edff;
+    }
+
+    section { padding: 75px 10%; }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .section-title span { color: #67e8f9; }
+
+    .about {
+      color: #94a3b8;
+      max-width: 800px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 18px;
+    }
+
+    .card {
+      background: #101827;
+      border: 1px solid #243249;
+      border-radius: 12px;
+      padding: 24px;
+      transition: .25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #67e8f9;
+    }
+
+    .card h3 {
+      color: #67e8f9;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      color: #67e8f9;
+      margin-top: 15px;
+      text-decoration: none;
+    }
+
+    .contact { text-align: center; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #1e293b;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 18px 5%; }
+      nav a { margin-left: 8px; font-size: 12px; }
+      .hero { padding: 65px 7%; }
+      section { padding: 55px 7%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Aditya.dev</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <span class="tag">CLOUD • DEVOPS • SECURITY</span>
+
+    <h1>
+      Hi, I'm Aditya Mishra.<br>
+      <span class="gradient">
+        I build in the cloud.
+      </span>
+    </h1>
+
+    <p>
+      B.Tech CSE student specializing in Cloud Technology
+      & Information Security. Passionate about AWS,
+      Linux, DevOps, automation, and secure infrastructure.
+    </p>
+
+    <div>
+      <a class="btn" href="#projects">Explore Projects ↗</a>
+      <a class="btn secondary" href="#contact">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <p class="about">
+      I'm a technology enthusiast learning to build,
+      automate, and deploy reliable systems. I enjoy
+      working with Linux, cloud infrastructure, containers,
+      and CI/CD pipelines. My goal is to grow as a
+      Cloud & DevOps Engineer through hands-on projects.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>☁ Cloud</h3>
+        <p>AWS, EC2, S3, IAM, VPC, OCI</p>
+      </div>
+
+      <div class="card">
+        <h3>⚙ DevOps</h3>
+        <p>Linux, Git, GitHub, Docker, CI/CD</p>
+      </div>
+
+      <div class="card">
+        <h3>⌨ Development</h3>
+        <p>Python, Django, SQL, HTML, CSS</p>
+      </div>
+
+      <div class="card">
+        <h3>🔐 Security</h3>
+        <p>Cloud Security, IAM, Networking</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>CatalyX OS</h3>
+        <p>
+          Debian-based modular CLI Linux distribution
+          with cloud, DevOps, network, and security tools.
+        </p>
+        <a href="https://github.com/adityam1810/CatalyX-OS"
+           target="_blank">View GitHub ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>GCP VPC Peering</h3>
+        <p>
+          Cloud networking lab exploring private
+          connectivity between virtual networks.
+        </p>
+        <a href="https://github.com/adityam1810/gcp-vpc-peering"
+           target="_blank">View GitHub ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>Django 3-Tier App</h3>
+        <p>
+          A web application project exploring Django,
+          Docker, and multi-service deployment.
+        </p>
+        <a href="https://github.com"
+           target="_blank">Add Repository ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>AWS S3 CI/CD</h3>
+        <p>
+          This portfolio will be deployed automatically
+          to AWS S3 using GitHub Actions.
+        </p>
+        <a href="https://github.com"
+           target="_blank">Coming Soon ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">
+      Let's <span>Connect</span>
+    </h2>
+
+    <p style="color:#94a3b8; margin-bottom:25px">
+      Open to internships, collaborations, and
+      Cloud / DevOps opportunities.
+    </p>
+
+    <a class="btn"
+       href="mailto:your-email@example.com">
+      Email Me ↗
+    </a>
+
+    <a class="btn secondary"
+       href="https://github.com/adityam1810"
+       target="_blank">
+      GitHub ↗
+    </a>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Aditya Mishra |
+    Built with HTML, CSS & JavaScript
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
